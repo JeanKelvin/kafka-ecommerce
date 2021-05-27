@@ -1,0 +1,25 @@
+package org.example.ecommerce;
+
+public class User {
+
+    private final String uuid;
+
+    public User(String uuid) {
+        this.uuid = uuid;
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public String getReportPath() {
+        return "./service-reading-report/target/" + uuid + "-report.txt";
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "uuid='" + uuid + '\'' +
+                '}';
+    }
+}
